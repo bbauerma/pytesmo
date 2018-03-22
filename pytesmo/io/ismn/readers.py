@@ -434,6 +434,7 @@ def get_min_max_timestamp_header_values(filename):
     """
     with open(filename, mode='rU') as fid:
         _ = fid.readline()
+        _ = fid.readline()
         first = fid.readline()
         last = tail(fid)[0]
 
